@@ -12,6 +12,10 @@ func main() {
 	fmt.Println("classLocale: ", classLocale)
 }
 
+// This function will get a classNameKey wich it a string contain class name
+// and locale.
+// The function will return `classNameTitle` and `classLocale` both are strings
+// Notice that I declared then both in return paranthises so no need to `:=` them
 func getNamesFromKey(classNameKey string) (classNameTitle, classLocale string) {
 	classNameTitle = strings.Title(strings.Replace(classNameKey, "_", " ", -1))
 	classNameParsed := strings.Split(classNameKey, "_")
